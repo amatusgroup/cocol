@@ -1,22 +1,20 @@
 # Cocol
+**Install Cocol**
+```bash
+$ brew install cocol
+```
 
 **Create a new project**
 ```bash
-$ mkdir mydl
-$ cd mydl
-$ cocol init
+$ cocol init microchain
 
 Welcome to cocol
 
 Choose a consensus mechanism
 
-1. PoW
-2. PoS Casper
-3. PoS Tendermint
-4. PoW + PoS Decred
-5. PoS Peercoin
-6. Proof of time elapsed
-7. Proof of storage
+1. Proof of Work
+2. Proof of Stake
+3. PoW & PoS Hybrid
 ```
 
 **Startup network**
@@ -29,3 +27,7 @@ Start Dasboard ............. [OK]
 
 Ready! Check http://localhost:8989
 ```
+
+**Create wallet (prefundet)**
+
+**Create transaction**
