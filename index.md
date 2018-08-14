@@ -6,7 +6,7 @@ $ brew install cocol
 
 **Create a new project**
 ```bash
-$ cocol init microchain
+$ cocol init my_microchain
 
 Welcome to cocol
 
@@ -19,7 +19,7 @@ Choose a consensus mechanism
 
 **Startup network**
 ```bash
-$ cocol network start
+$ cocol start my_microchain
 
 Spawning nodes (200) ....... [OK]
 Apply magic ................ [OK]
