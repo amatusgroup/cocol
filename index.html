@@ -1,8 +1,101 @@
 <html>
   <head>
-    <title>Cocol</title>
+    <title>Cocol // by amatus</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+      body {
+        background-color: #fafafa;
+        color: #61676C;
+        font-family: 'Roboto Mono', monospace;
+        margin: 0;
+        padding: 2em 0 0 2em;
+      }
+      h1 {
+        text-align: center;
+        font-size: 4em;
+      }
+      h3 {
+        width: 50em;
+        margin: auto;
+        padding: 1em;
+      }
+      div.console {
+        width: 50em;
+        margin: auto;
+        margin-bottom: 5em;
+        background-color: #212733;
+        border-radius: 0.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1em;
+
+        color: #CCC9C2;
+      }
+      div.console span.comment {
+        display: block;
+        color: #5C6773;
+      }
+      div.console span.command-line {
+        display: block;
+        color: #73D0FF;
+      }
+      span.command-line span.command {
+        color: #FFA759;
+        font-weight: bold;
+      }
+      div.console span.output {
+        display: block;
+        color: #fafafa;
+        font-weight: bold;
+      }
+      div.console span.empty-space {
+        display: block;
+        height: 2em;
+      }
+    </style>
   </head>
   <body>
     <h1>Cocol</h1>
+
+    <h3>Quick Setup</h3>
+    <div class='console'>
+      <span class='comment'># Install Cocol</span>
+      <span class='command-line'>$ <span class='command'>brew</span> install cocol</span>
+
+      <span class='empty-space'></span>
+
+      <span class='comment'># Create a new project</span>
+      <span class='command-line'>$ <span class='command'>cocol</span> init my_chain</span>
+      <span class='output'>
+        <br/>
+        <br/>
+        Welcome to Cocol<br/>
+        <br/>
+        Choose a consensus mechanism<br/>
+        <br/>
+        1) Proof of Work<br/>
+        2) Proof of Stake<br/>
+        3) Hybrid PoW + PoS<br/>
+        <br/>
+        &gt; 1
+      </span>
+    </div>
+
+
+    <h3>Quick Startup</h3>
+    <div class='console'>
+      <span class='comment'># Bootup network</span>
+      <span class='command-line'>$ <span class='command'>cocol</span> start my_chain</span>
+      <span class='output'>
+        <br/>
+        <br/>
+        Spawning nodes (200) ......................... [ DONE ]<br/>
+        Apply magic .................................. [ DONE ]<br/>
+        Start dashboard .............................. [ DONE ]<br/>
+        <br/>
+        <br/>
+        All good! Check <u>http://localhost:8989</u><br/>
+      </span>
+    </div>
   </body>
 </html>
