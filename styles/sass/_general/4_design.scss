@@ -1,0 +1,84 @@
+/* -------------------------- *
+* RESET
+* -------------------------- */
+
+*:focus {
+	outline: 0;
+}
+
+* { -webkit-tap-highlight-color:transparent; }
+
+textarea, select, input.form-input {
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius:0;
+}
+
+
+/* -------------------------- *
+* STYLES
+* -------------------------- */
+
+body {
+	background: $color-white;
+	color: $color-main-dark;
+	font-family: 'Montserrat', sans-serif;
+	font-size: $font-size-3;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+
+	@media(max-width:991px) {
+		padding: 0 $margin;
+	}
+
+	&-sm {
+		max-width: 810px;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+
+		@media(max-width:991px) {
+			padding: 0 $margin;
+		}
+	}
+}
+
+img {
+	display: block;
+}
+
+a {
+	color:$color-link;
+
+	&:hover {
+		color:$color-link;
+		text-decoration: underline;
+	}
+}
+
+p {
+	line-height: 1.5;
+	margin: ($margin / 2) 0;
+}
+
+blockquote {
+	border: 0;
+	font-style: italic;
+	font-size: $font-size-2;
+	margin: ($margin / 2) 0;
+	padding: 0;
+}
+
+hr {
+	margin: ($margin * 2) 0;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}

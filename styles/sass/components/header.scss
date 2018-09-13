@@ -1,0 +1,12 @@
+.header {
+  padding: 50px 0;
+  position: absolute;
+  width: 100%;
+
+  &-logo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 120px;
+  }
+}

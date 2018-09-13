@@ -1,123 +1,173 @@
-<html>
-  <head>
-    <title>Cocol // by amatus</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-      @import url('https://fonts.googleapis.com/css?family=Roboto');
+<!doctype html>
+<html lang="de">
+<head>
 
-      body {
-        background-color: #fafafa;
-        color: #61676C;
-        font-family: 'Roboto Mono', monospace;
-        margin: 0;
-        padding: 2em 0 0 2em;
-      }
-      h1 {
-        text-align: center;
-        font-size: 4em;
-        font-family: 'Roboto';
-      }
-      h3 {
-        width: 700px;
-        margin: auto;
-        padding: 1em;
-      }
-      p {
-        width: 700px;
-        margin: auto;
-      }
-      p span.accent {
-        color: #FF8F40;
-      }
-      div.console {
-        width: 700px;
-        margin: auto;
-        margin-bottom: 5em;
-        background-color: #212733;
-        border-radius: 0.5em;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 1em;
+<!--Meta-->
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Cocol // by amatus</title>
+<meta name="description" content="An un-opinionated toolbox and framework for building distributed ledgers">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-        color: #CCC9C2;
-      }
-      div.console span.comment {
-        display: block;
-        color: #5C6773;
-      }
-      div.console span.command-line {
-        display: block;
-        color: #73D0FF;
-      }
-      span.command-line span.command {
-        color: #FFA759;
-        font-weight: bold;
-      }
-      div.console span.output {
-        display: block;
-        color: #CCC9C2;
-        font-weight: bold;
-      }
-      div.console span.empty-space {
-        display: block;
-        height: 2em;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>cocol</h1>
-    <p>
-    Cocol is an un-opinionated toolbox and framework for building <span class='accent'>distributed ledgers</span>.
-    </p>
-    <p>
-      We aim for <span class='accent'>developer happiness</span> with a quick and straightforward setup.
-    </p>
-    <p>
-      You can choose from a variety of community submitted modules to <span class='accent'>create your own blockchain</span> and immediately start your new project.
-    </p>
-    <p>
-      Interact with your new blockchain via a <span class='accent'>dashboard</span> and see e.g. <span class='accent'>how transaction move along</span> the network until consensus is reached.
-    </p>
-    <p>&nbsp;</p>
+<!--OG-Image-->
+<meta property="og:title" content="Cocol // by amatus"/>
+<meta property="og:type" content="product"/>
+<meta property="og:url" content="https://www.amatus.com/cocol"/>
+<meta property="og:image" content="https://www.amatus.com/cocol/img/facebook-sharing.jpg"/>
+<meta property="og:site_name" content="cocol"/>
+<meta property="og:description" content="An un-opinionated toolbox and framework for building distributed ledgers"/>
 
-    <h3>Quick Setup</h3>
-    <div class='console'>
-      <span class='comment'># Install Cocol</span>
-      <span class='command-line'>$ <span class='command'>brew</span> install cocol</span>
+<!--FavIcon-->
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../img/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#ff0062">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
 
-      <span class='empty-space'></span>
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Roboto+Mono:400,400i" rel="stylesheet">
 
-      <span class='comment'># Create a new project</span>
-      <span class='command-line'>$ <span class='command'>cocol</span> init my_chain</span>
-      <span class='output'>
-        <br/>
-        <br/>
-        Welcome to Cocol<br/>
-        <br/>
-        Choose a consensus mechanism<br/>
-        <br/>
-        1) Proof of Work<br/>
-        2) Proof of Stake<br/>
-        3) Hybrid PoW + PoS<br/>
-        <br/>
-        &gt; 1
-      </span>
-    </div>
+<!--CSS-->
+<link rel="stylesheet" href="styles/css/master.css">
 
+</head>
+<body>
 
-    <h3>Quick Startup</h3>
-    <div class='console'>
-      <span class='comment'># Bootup network</span>
-      <span class='command-line'>$ <span class='command'>cocol</span> start my_chain</span>
-      <span class='output'>
-        <br/>
-        <br/>
-        Spawning nodes (200) ......................... [ DONE ]<br/>
-        Apply magic .................................. [ DONE ]<br/>
-        Start dashboard .............................. [ DONE ]<br/>
-        <br/>
-        <br/>
-        All good! Check <u>http://localhost:8989</u><br/>
-      </span>
-    </div>
-  </body>
+  <div class="wrapper_margins">
+
+    <header id="header">
+      <div class="header">
+        <div class="container-sm">
+          <img class="header-logo" src="img/cocol-logo.svg" alt="cocol" width="" height="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="stage">
+        <div class="stage">
+          <div class="container">
+            <div class="stage-content">
+              <h1 class="stage-headline">An un-opinionated toolbox and framework for building <span>distributed ledgers</span></h1>
+              <div class="stage-button">
+                <div>For questions or further information:</div>
+                <a class="btn btn-lg btn-primary" href="mailto:cristian@amatus.com" title="Contact us">Contact us</a>
+              </div>
+            </div>
+          </div>
+          <div class="stage-graphic-background">
+            <img class="stage-graphic" src="img/circuit-board.png" alt="cocol cicruit board" width="" height="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="description">
+        <div class="container-sm">
+          <div class="description">
+            <h2 class="description-headline">We aim for developer happiness with a quick and straightforward setup.</h2>
+            <p>You can choose from a variety of community submitted modules to <span>create your own blockchain</span> and immediately start your new project.<br />Interact with your new blockchain via a <span>dashboard</span> and see e.g. <span>how transaction move along</span> the network until consensus is reached.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="steps">
+        <div class="steps">
+          <div class="container-sm">
+
+            <div class="steps-step">
+              <h2 class="steps-headline"><span>1.</span> Quick Setup</h2>
+              <div class="steps-box-wrapper">
+                <div class="steps-icon">
+                  <img class="steps-icon-image" src="img/icon-setup.png" alt="" width="" height="" />
+                </div>
+                <div class="steps-box">
+                  <div class="code">
+                    <span class="comment"># Install Cocol</span><br />
+                    <span class="command-line">$ <span class="command">brew</span> install cocol</span><br />
+                    <br />
+                    <span class="comment"># Create a new project</span><br />
+                    <span class="command-line">$ <span class="command">cocol</span> init my_chain</span><br />
+                    <br />
+                    Welcome to Cocol<br />
+                    <br />
+                    Choose a consensus mechanism<br />
+                    <br />
+                    1) Proof of Work<br />
+                    2) Proof of Stake<br />
+                    3) Hybrid PoW + PoS<br />
+                    <br />
+                    > 1
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="steps-step">
+              <h2 class="steps-headline"><span>2.</span> Quick Startup</h2>
+              <div class="steps-box-wrapper">
+                <div class="steps-icon">
+                  <img class="steps-icon-image rotate" src="img/icon-startup.png" alt="" width="" height="" />
+                </div>
+                <div class="steps-box">
+                  <div class="code">
+                    <span class="comment"># Bootup network</span><br />
+                    <span class="command-line">$ <span class="command">cocol</span> start my_chain</span><br />
+                    <br />
+                    Spawning nodes (200) ........ [ DONE ]<br />
+                    Apply magic ................. [ DONE ]<br />
+                    Start dashboard ............. [ DONE ]<br />
+                    <br /><br />
+                    All good! Check http://localhost:8989
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="steps-step">
+              <h2 class="steps-headline"><span>3.</span> Dashboard</h2>
+              <div class="steps-box-wrapper">
+                <div class="steps-icon animated pulse infinite">
+                  <img class="steps-icon-image" src="img/icon-logo.png" alt="cocol Logo" width="" height="" />
+                </div>
+                <div class="steps-box">
+                  <img class="steps-image" src="img/dashboard.jpg" alt="cocol Dashboard" width="" height="" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <div class="container-sm">
+            <div class="contact-button">
+              <div>For questions or further information:</div>
+              <a class="btn btn-lg btn-primary" href="mailto:cristian@amatus.com" title="Contact us">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <div class="footer">
+        <div class="container-sm">
+          © 2018 cocol - An <a href="http://www.amatus.com" title="amatus Website" target="_blank">amatus</a> portfolio company.<br /><br />All rights reserved. <a href="http://www.amatus.com/imprint" title="amatus Imprint" target="_blank">Imprint</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>

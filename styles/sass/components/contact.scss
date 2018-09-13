@@ -1,0 +1,16 @@
+.contact {
+  background: url('../../img/background-contact.jpg') repeat-x left top $color-main-light;
+  background-size: auto 150px;
+  padding: ($padding * 4) 0;
+
+  &-button {
+    color: $color-white;
+    font-size: $font-size-1;
+    text-align: center;
+
+    .btn {
+      margin-top: 5px;
+      min-width: 270px;
+    }
+  }
+}

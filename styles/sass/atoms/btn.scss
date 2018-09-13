@@ -1,0 +1,46 @@
+.btn {
+	border-radius: $radius;
+	box-shadow: none !important;
+	font-family: 'Montserrat', sans-serif;
+	font-size: $font-size-3;
+	display: inline-block;
+	padding: ($padding * .5) ($padding * 1.2);
+	white-space: normal;
+
+	i {
+		margin-right: 2px;
+		position: relative;
+		top: 2px;
+	}
+
+	&-sm {
+		font-size: $font-size-1;
+		padding: 6px $padding;
+
+		i { top: 1px; }
+	}
+
+	&-lg {
+		border-radius: $radius-big;
+		font-size: $font-size-5;
+		padding: ($padding * .55) ($padding * 2);
+	}
+
+	&-primary {
+		background: $color-action;
+		border: none;
+		color: $color-white;
+
+		&:hover, &:active {
+			background: darken($color-action, 10%);
+			border: none;
+			color: $color-white;
+		}
+
+		&:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+			background: $color-action;
+			border: $border-size-big solid $color-action;
+			color: $color-white;
+		}
+	}
+}
