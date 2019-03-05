@@ -51,7 +51,7 @@
         <div class="stage">
           <div class="container">
             <div class="stage-content">
-              <h1 class="stage-headline">An un-opinionated toolbox and framework for building <span>distributed ledgers</span></h1>
+              <h1 class="stage-headline">An accessible framework for building <span>blockchains</span></h1>
               <div class="stage-button">
                 <div>For questions or further information:</div>
                 <a class="btn btn-lg btn-primary" href="mailto:cristian@amatus.com" title="Contact us">Contact us</a>
@@ -68,7 +68,15 @@
         <div class="container-sm">
           <div class="description">
             <h2 class="description-headline">We aim for developer happiness with a quick and straightforward setup.</h2>
-            <p>You can choose from a variety of community submitted modules to <span>create your own blockchain</span> and immediately start your new project.<br />Interact with your new blockchain via a <span>dashboard</span> and see e.g. <span>how transaction move along</span> the network until consensus is reached.</p>
+            <p>
+                Interact via a dashboard and see how blocks move along the network until consensus is reached or write end-to-end test scenarios. It's built from ground up for a testable and visually driven development.
+            </p>
+            <p>
+                While for blockchains everything seems to be about decentralization, most projects come from an ivory tower with a top-down approach or are poorly documented while at the same time growing in complexity. Both scenarios limit contribution by newcomers and create a closed and small community.
+            </p>
+            <p>
+                Cocol wants to be built by, and grow with the community to cover its needs and lessen pain points when dealing with blockchain technology. To improve accessibility we chose Crystal as the programming language. "Crystal's ( <a href="https://crystal-lang.org">https://crystal-lang.org/</a> ) syntax is heavily inspired by Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs."
+            </p>
           </div>
         </div>
       </section>
@@ -86,20 +94,9 @@
                 <div class="steps-box">
                   <div class="code">
                     <span class="comment"># Install Cocol</span><br />
-                    <span class="command-line">$ <span class="command">brew</span> install cocol</span><br />
+                    <span class="command-line">$ <span class="command">git clone</span> https://gitlab.com/cocol/cocol.git</span><br />
                     <br />
-                    <span class="comment"># Create a new project</span><br />
-                    <span class="command-line">$ <span class="command">cocol</span> init my_chain</span><br />
-                    <br />
-                    Welcome to Cocol<br />
-                    <br />
-                    Choose a consensus mechanism<br />
-                    <br />
-                    1) Proof of Work<br />
-                    2) Proof of Stake<br />
-                    3) Hybrid PoW + PoS<br />
-                    <br />
-                    > 1
+                    <span class="command-line">$ <span class="command">cd</span> cocol</span><br />
                   </div>
                 </div>
               </div>
@@ -114,10 +111,9 @@
                 <div class="steps-box">
                   <div class="code">
                     <span class="comment"># Bootup network</span><br />
-                    <span class="command-line">$ <span class="command">cocol</span> start my_chain</span><br />
+                    <span class="command-line">$ <span class="command">./script/start.sh</span> 200</span><br />
                     <br />
                     Spawning nodes (200) ........ [ DONE ]<br />
-                    Apply magic ................. [ DONE ]<br />
                     Start dashboard ............. [ DONE ]<br />
                     <br /><br />
                     All good! Check http://localhost:8989
